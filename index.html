@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Source Longevity - Personalized regenerative medicine and longevity treatments. Hormone optimization, peptide therapy, IV treatments, and more.">
+  <meta name="keywords" content="longevity, regenerative medicine, hormone therapy, peptide therapy, IV therapy, anti-aging">
+  <title>The Source Longevity | Regenerate. Restore. Renew.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="header__inner">
+      <a href="index.html" class="logo" aria-label="The Source Longevity - Home">
+        <svg class="logo__icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 8C20 8 12 16 12 22C12 26.4183 15.5817 30 20 30C24.4183 30 28 26.4183 28 22C28 16 20 8 20 8Z" fill="currentColor"/>
+          <path d="M20 14V24M17 21L20 24L23 21" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>The Source</span>
+      </a>
+
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          <li><a href="services.html" class="nav__link">Services</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="membership.html" class="nav__link">Membership</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn--primary btn--small header__cta">Book Consultation</a>
+
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+  <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Home</a></li>
+      <li><a href="services.html" class="mobile-nav__link">Services</a></li>
+      <li><a href="about.html" class="mobile-nav__link">About</a></li>
+      <li><a href="membership.html" class="mobile-nav__link">Membership</a></li>
+      <li><a href="contact.html" class="mobile-nav__link">Contact</a></li>
+    </ul>
+    <div class="mobile-nav__cta">
+      <a href="contact.html" class="btn btn--white btn--block">Book Consultation</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" role="banner">
+      <img
+        src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=1920&h=1080&fit=crop"
+        alt="Modern wellness clinic interior"
+        class="hero__background"
+        loading="eager"
+      >
+      <div class="hero__overlay"></div>
+      <div class="hero__content">
+        <span class="hero__tagline">Regenerate. Restore. Renew.</span>
+        <h1 class="hero__title">Unlock Your Body's Regenerative Potential</h1>
+        <p class="hero__subtitle">Personalized longevity medicine backed by science, delivered with care. Experience the future of health optimization at The Source.</p>
+        <div class="hero__buttons">
+          <a href="contact.html" class="btn btn--white btn--large">Book Consultation</a>
+          <a href="services.html" class="btn btn--outline-white btn--large">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <section class="trust-bar" aria-label="Trust indicators">
+      <div class="trust-bar__inner">
+        <div class="trust-item">
+          <div class="trust-item__number">15+</div>
+          <div class="trust-item__label">Years Experience</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__number">5,000+</div>
+          <div class="trust-item__label">Patients Served</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__number">Board</div>
+          <div class="trust-item__label">Certified Physicians</div>
+        </div>
+        <div class="trust-item">
+          <div class="trust-item__number">98%</div>
+          <div class="trust-item__label">Patient Satisfaction</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="section" id="services-overview">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__label">Our Services</span>
+          <h2 class="section-header__title">Comprehensive Longevity Solutions</h2>
+          <p class="section-header__description">From hormone optimization to cutting-edge regenerative therapies, we offer personalized treatments designed to help you thrive at every age.</p>
+        </header>
+
+        <div class="services-grid">
+          <!-- Hormone Optimization -->
+          <article class="service-card animate-fade-in">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                <path d="M2 17l10 5 10-5"/>
+                <path d="M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Hormone Optimization</h3>
+            <p class="service-card__description">Restore balance and vitality with bioidentical hormone replacement therapy tailored to your unique physiology.</p>
+            <a href="services.html#hormones" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Peptide Therapy -->
+          <article class="service-card animate-fade-in animate-delay-1">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"/>
+                <line x1="9" y1="9" x2="9.01" y2="9"/>
+                <line x1="15" y1="9" x2="15.01" y2="9"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Peptide Therapy</h3>
+            <p class="service-card__description">Unlock enhanced recovery, improved sleep, and optimized performance with targeted peptide protocols.</p>
+            <a href="services.html#peptides" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Regenerative Therapies -->
+          <article class="service-card animate-fade-in animate-delay-2">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Regenerative Therapies</h3>
+            <p class="service-card__description">Harness the power of stem cells, exosomes, and PRP to accelerate healing and cellular regeneration.</p>
+            <a href="services.html#regenerative" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- IV Therapy -->
+          <article class="service-card animate-fade-in animate-delay-3">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="12" y1="18" x2="12" y2="12"/>
+                <line x1="9" y1="15" x2="15" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">IV Therapy</h3>
+            <p class="service-card__description">Maximize absorption of essential nutrients with NAD+, Myers Cocktail, and custom vitamin infusions.</p>
+            <a href="services.html#iv" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Weight Management -->
+          <article class="service-card animate-fade-in animate-delay-4">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 20V10"/>
+                <path d="M12 20V4"/>
+                <path d="M6 20v-6"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Weight Management</h3>
+            <p class="service-card__description">Achieve sustainable results with medically-supervised protocols including GLP-1 therapies and metabolic optimization.</p>
+            <a href="services.html#weight" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+
+          <!-- Longevity Assessments -->
+          <article class="service-card animate-fade-in animate-delay-4">
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Longevity Assessments</h3>
+            <p class="service-card__description">Comprehensive biomarker analysis and biological age testing to create your personalized longevity roadmap.</p>
+            <a href="services.html#assessments" class="service-card__link">
+              Learn More
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section section--light" id="how-it-works">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__label">Your Journey</span>
+          <h2 class="section-header__title">How It Works</h2>
+          <p class="section-header__description">We make it simple to begin your path to optimal health with a personalized, science-driven approach.</p>
+        </header>
+
+        <div class="steps-grid">
+          <div class="step animate-fade-in">
+            <div class="step__number">1</div>
+            <h3 class="step__title">Consultation</h3>
+            <p class="step__description">Meet with our physicians to discuss your health goals, concerns, and medical history in a comprehensive initial visit.</p>
+          </div>
+
+          <div class="step animate-fade-in animate-delay-1">
+            <div class="step__number">2</div>
+            <h3 class="step__title">Assessment</h3>
+            <p class="step__description">Complete advanced diagnostic testing including comprehensive bloodwork, biomarkers, and genetic analysis.</p>
+          </div>
+
+          <div class="step animate-fade-in animate-delay-2">
+            <div class="step__number">3</div>
+            <h3 class="step__title">Custom Protocol</h3>
+            <p class="step__description">Receive your personalized treatment plan with ongoing monitoring, adjustments, and support from our team.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-header__label">Success Stories</span>
+          <h2 class="section-header__title">What Our Patients Say</h2>
+        </header>
+
+        <div class="testimonials-slider">
+          <div class="testimonials-track">
+            <div class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__quote">"After struggling with fatigue and brain fog for years, The Source helped me understand the root causes. Six months later, I feel like I'm in my 30s again. The personalized approach made all the difference."</p>
+                <div class="testimonial__author">
+                  <img
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                    alt="Michael R."
+                    class="testimonial__avatar"
+                  >
+                  <div class="testimonial__info">
+                    <div class="testimonial__name">Michael R.</div>
+                    <div class="testimonial__title">Executive, 52</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__quote">"The team at The Source truly listens. My hormone optimization protocol has transformed my quality of life—better sleep, more energy, and I've finally been able to maintain my ideal weight."</p>
+                <div class="testimonial__author">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face"
+                    alt="Sarah M."
+                    class="testimonial__avatar"
+                  >
+                  <div class="testimonial__info">
+                    <div class="testimonial__name">Sarah M.</div>
+                    <div class="testimonial__title">Attorney, 47</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial">
+              <div class="testimonial__content">
+                <p class="testimonial__quote">"As a former athlete, I was skeptical of anti-aging medicine. But the regenerative therapies here have helped me recover from injuries faster and maintain the active lifestyle I love."</p>
+                <div class="testimonial__author">
+                  <img
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+                    alt="David K."
+                    class="testimonial__avatar"
+                  >
+                  <div class="testimonial__info">
+                    <div class="testimonial__name">David K.</div>
+                    <div class="testimonial__title">Retired Pro Athlete, 58</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonials-dots" role="tablist" aria-label="Testimonial slides">
+            <button class="testimonials-dot active" role="tab" aria-label="Slide 1" aria-selected="true"></button>
+            <button class="testimonials-dot" role="tab" aria-label="Slide 2" aria-selected="false"></button>
+            <button class="testimonials-dot" role="tab" aria-label="Slide 3" aria-selected="false"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section section--light" id="about-preview">
+      <div class="container">
+        <div class="about-preview">
+          <div class="about-preview__image animate-fade-in">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600&h=500&fit=crop"
+              alt="Dr. Jennifer Hayes, Medical Director of The Source Longevity"
+            >
+          </div>
+          <div class="about-preview__content animate-fade-in animate-delay-1">
+            <h2 class="about-preview__title">Meet Our Founder</h2>
+            <p class="about-preview__text">Dr. Jennifer Hayes founded The Source Longevity with a vision to transform how we approach aging. With over 15 years of experience in functional and regenerative medicine, she believes that optimal health is achievable at any age through personalized, evidence-based protocols.</p>
+            <p class="about-preview__text">"My mission is to help patients not just add years to their life, but life to their years. True longevity means thriving—physically, mentally, and emotionally."</p>
+            <a href="about.html" class="btn btn--primary">Learn Our Story</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__title">Start Your Longevity Journey Today</h2>
+        <p class="cta-banner__text">Schedule your consultation and discover how personalized regenerative medicine can help you look, feel, and perform your best.</p>
+        <a href="contact.html" class="btn btn--white btn--large">Book Your Consultation</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <div class="footer__logo">The Source Longevity</div>
+          <p class="footer__tagline">"Regenerate. Restore. Renew."</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect x="2" y="9" width="4" height="12"/>
+                <circle cx="4" cy="4" r="2"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__section">
+          <h4 class="footer__heading">Quick Links</h4>
+          <nav class="footer__links">
+            <a href="services.html" class="footer__link">Services</a>
+            <a href="about.html" class="footer__link">About Us</a>
+            <a href="membership.html" class="footer__link">Membership</a>
+            <a href="contact.html" class="footer__link">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__section">
+          <h4 class="footer__heading">Contact</h4>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>123 Wellness Boulevard<br>Austin, TX 78701</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>(512) 555-0123</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>info@thesourcelongevity.com</span>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer__newsletter">
+          <h4 class="footer__heading">Stay Updated</h4>
+          <p style="color: rgba(255,255,255,0.7); font-size: 0.9375rem; margin-bottom: 16px;">Get the latest in longevity science and exclusive offers.</p>
+          <form class="newsletter-form" action="#">
+            <input type="email" class="newsletter-form__input" placeholder="Enter your email" aria-label="Email for newsletter">
+            <button type="submit" class="btn btn--primary btn--small">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2024 The Source Longevity. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="#" class="footer__legal-link">Privacy Policy</a>
+          <a href="#" class="footer__legal-link">Terms of Service</a>
+          <a href="#" class="footer__legal-link">HIPAA Notice</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
